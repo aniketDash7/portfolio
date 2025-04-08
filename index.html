@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aniket | Portfolio</title>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aniket • Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Basic Styling -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem 1rem;
+      background-color: #fdfdfd;
       color: #111;
-      padding: 2rem;
       line-height: 1.6;
     }
+
     header {
       text-align: center;
       margin-bottom: 3rem;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin: 0;
     }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0.5rem 0 1rem;
+    }
+
     nav a {
-      margin: 0 1rem;
+      margin: 0 0.8rem;
       text-decoration: none;
       color: #007acc;
+      font-weight: 500;
+      transition: 0.2s;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     section {
-      max-width: 800px;
-      margin: 2rem auto;
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
-    .project, .writing {
+
+    h2 {
+      font-size: 1.8rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .project, .post {
       margin-bottom: 1.5rem;
     }
-    .title {
-      font-weight: bold;
+
+    .project h3, .post h3 {
+      margin: 0;
       font-size: 1.2rem;
+    }
+
+    .project p, .post p {
+      margin-top: 0.3rem;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+      color: #777;
     }
   </style>
 </head>
@@ -62,7 +99,7 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="project" v-for="project in projects" :key="project.title">
-        <div class="title">{{ project.title }}</div>
+        <h3>{{ project.title }}</h3>
         <p>{{ project.description }}</p>
       </div>
     </section>
@@ -74,33 +111,54 @@
 
     <section id="writing">
       <h2>Writing</h2>
-      <div class="writing" v-for="post in writing" :key="post.title">
-        <div class="title">{{ post.title }}</div>
+      <div class="post" v-for="post in writing" :key="post.title">
+        <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt }}</p>
       </div>
     </section>
+
+    <footer>
+      © {{ new Date().getFullYear() }} Aniket • Built with Vue & GitHub Pages
+    </footer>
   </div>
 
+  <!-- Vue 3 Production -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
   <script>
-    const { createApp } = Vue;
+    window.addEventListener('DOMContentLoaded', () => {
+      const { createApp } = Vue;
 
-    createApp({
-      data() {
-        return {
-          name: 'Aniket',
-          tagline: 'Data Science • Remote Sensing • Music',
-          about: "I'm a final-semester data science undergrad who loves building things with satellite imagery, playing guitar, and sharing insights through films and writing.",
-          projects: [
-            { title: 'Cloud Removal Model (CMSN)', description: 'Training a cloud removal model using Landsat imagery and PyTorch.' },
-            { title: 'DSen2-CR on RGB Sentinel-2', description: 'Adapted a multispectral model to work with RGB images from Sentinel-2.' }
-          ],
-          writing: [
-            { title: 'The Beauty of Imperfect Data', excerpt: 'Why working with noisy satellite data taught me more than any clean dataset ever did.' },
-            { title: 'AI in Agriculture: Lessons from the Field', excerpt: 'What working at an agritech startup taught me about AI applications in real-world farming.' }
-          ]
+      createApp({
+        data() {
+          return {
+            name: 'Aniket',
+            tagline: 'Data Science • Remote Sensing • Music',
+            about: `I'm a final-semester data science undergrad who loves building things with satellite imagery, 
+                    playing guitar, and sharing insights through films and writing.`,
+            projects: [
+              {
+                title: 'Cloud Removal Model (CMSN)',
+                description: 'Training a cloud removal model using Landsat imagery and PyTorch.'
+              },
+              {
+                title: 'DSen2-CR on RGB Sentinel-2',
+                description: 'Adapted a multispectral model to work with RGB images from Sentinel-2.'
+              }
+            ],
+            writing: [
+              {
+                title: 'The Beauty of Imperfect Data',
+                excerpt: 'Why working with noisy satellite data taught me more than any clean dataset ever did.'
+              },
+              {
+                title: 'AI in Agriculture: Lessons from the Field',
+                excerpt: 'What real-world deployment of models in Indian farms taught me about model failure and fixes.'
+              }
+            ]
+          };
         }
-      }
-    }).mount('#app')
+      }).mount('#app');
+    });
   </script>
 </body>
 </html>
