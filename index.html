@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aniket | Portfolio</title>
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #007acc;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .project, .writing {
+      margin-bottom: 1.5rem;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>{{ name }}</h1>
+      <p>{{ tagline }}</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#writing">Writing</a>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project" v-for="project in projects" :key="project.title">
+        <div class="title">{{ project.title }}</div>
+        <p>{{ project.description }}</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>{{ about }}</p>
+    </section>
+
+    <section id="writing">
+      <h2>Writing</h2>
+      <div class="writing" v-for="post in writing" :key="post.title">
+        <div class="title">{{ post.title }}</div>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          name: 'Aniket',
+          tagline: 'Data Science • Remote Sensing • Music',
+          about: "I'm a final-semester data science undergrad who loves building things with satellite imagery, playing guitar, and sharing insights through films and writing.",
+          projects: [
+            { title: 'Cloud Removal Model (CMSN)', description: 'Training a cloud removal model using Landsat imagery and PyTorch.' },
+            { title: 'DSen2-CR on RGB Sentinel-2', description: 'Adapted a multispectral model to work with RGB images from Sentinel-2.' }
+          ],
+          writing: [
+            { title: 'The Beauty of Imperfect Data', excerpt: 'Why working with noisy satellite data taught me more than any clean dataset ever did.' },
+            { title: 'AI in Agriculture: Lessons from the Field', excerpt: 'What working at an agritech startup taught me about AI applications in real-world farming.' }
+          ]
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
