@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Pratap Vardhan</h1>
+    <nav>
+      <a href="/blog">Blog</a>
+      <a href="/media">Media</a>
+      <a href="/work">Work</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Hi! I’m Pratap. 👋</h2>
+    <p>I’m a full-stack data scientist from India. I build interfaces, to help people tell stories using technology and data.</p>
+
+    <p>I’m a principal data scientist at <a href="#">Khan Academy</a> and creator of <a href="#">Stats of India</a></p>
+
+    <p>You can read more about my <a href="#"><strong>work here</strong></a>.</p>
+    <p>To get in touch with me see <a href="#"><strong>contact</strong></a>.</p>
+
+    <h3>Recent</h3>
+    <ul>
+      <li>Tensorflow: <a href="#">TFCommunitySpotlight Winner</a> for in-browser photo cartoonizer</li>
+      <li>Talk: <a href="#">How we built covid19dashboards.com</a> at JupyterCon</li>
+      <li>Interactive: <a href="#">Capacity Planning</a>: Simulate hospital beds availability</li>
+      <li>Article: <a href="#">Bar Chart Race in Python with Matplotlib</a> - Towards Data Science</li>
+      <li>Article: <a href="#">Tile Narrative: Scrollytelling with Grid Maps</a> - Nightingale, Data Visualization Society</li>
+      <li>Article: <a href="#">Lessons Learned From Creating Physical Data Visualizations</a> - Nightingale, DVS</li>
+    </ul>
+
+    <h3>Some Projects</h3>
+    <div class="project-gallery">
+      <img src="/assets/img/project1.png" alt="Stats of India">
+      <img src="/assets/img/project2.png" alt="White-box CartoonGAN">
+    </div>
+  </main>
+
+  <footer>
+    <p>© {{ 'now' | date: "%Y" }} Your Name</p>
+  </footer>
+</body>
+</html>
