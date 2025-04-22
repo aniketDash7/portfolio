@@ -49,21 +49,27 @@ body {
 
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 1.5rem;
     margin-top: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .project {
     text-align: left;
+    font-size: 0.9rem;
   }
   
   .project img {
     width: 100%;
-    height: auto;
+    max-height: 160px; /* Smaller tile height */
+    object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
+  
 
   footer {
     margin-top: 3rem;
