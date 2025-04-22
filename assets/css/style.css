@@ -64,10 +64,11 @@ body {
   
   .project img {
     width: 100%;
-    max-height: 160px;
-    object-fit: cover;
+    height: 160px;          
+    object-fit: cover;      
+    transform: scale(1.1);   
+    transform-origin: center;
     border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
   
 
