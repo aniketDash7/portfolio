@@ -1,11 +1,70 @@
+
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:"Merriweather", serif;
     line-height: 1.6;
     max-width: 768px;
     margin: auto;
     padding: 2rem;
     color: #333;
   }
+  .container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 700px;
+    height: 100vh;
+  }
+
+  .container .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-bottom: 0rem;
+  }
+
+  .container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .container .subtitle {
+    font-size: 1.25rem;
+    color:black;
+    
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  .container .muted {
+    color: black;
+    margin-bottom: 1rem;
+  }
+
+
+  .container .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .container .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color:black;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 1px solid ;
+    transition: all 0.3s ease;
+  }
+
+  .container .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+
 
   header {
     display: flex;
@@ -15,8 +74,9 @@ body {
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
+    font-weight: lighter;
   }
 
   nav a {
@@ -74,8 +134,50 @@ body {
     transform-origin: center;
     border-radius: 6px;
   }
-  
 
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.1rem;
+    padding: 0.2 0;
+  }
+  .insta-wrapper {
+    max-width: 200px;       /* Or whatever width you want */
+    transform: scale(0.8); /* You can zoom in or out */
+    transform-origin: top left;
+  }
+  .blog-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .blog-list li {
+    background: #f8f8f8;
+    padding: 1.25rem;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .blog-list a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .blog-list h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
+  
+.blog-list p {
+  margin: 0;
+  color: #555;
+}
+  .blog-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
   footer {
     margin-top: 3rem;
     padding-top: 1rem;
