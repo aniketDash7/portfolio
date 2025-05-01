@@ -156,10 +156,44 @@ body {
     }
   }
 
+  .masonry-grid {
+    column-count: 6;
+    column-gap: 0.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 0.2rem;
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .masonry-grid h3{
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .masonry-grid {
+      column-count: 3;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
   .instagram-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.1rem;
+    gap: 0rem;
     padding: 0.2 0;
   }
   .insta-wrapper {
