@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,9 +7,10 @@
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <header>
     <h1><a href="index.html">Aniket Dash</a></h1>
@@ -16,33 +18,55 @@
       <a href="blog.html">Blog</a>
       <a href="media.html">Media</a>
       <a href="work.html">Work</a>
+      <a href="music.html">Music</a>
     </nav>
   </header>
 
-  <main>
-    <h3>About Me</h3>
-    <p>Hello ! I am Aniket Dash. I recently graduated with a degree in data science and completed my data science internship with <a href="https://www.cropin.com/">CropIn</a>.</p>
-    <p>I have always been in love with stories and how they map thoughts into existence.</p>
-    <p>My ability to see connections between ideas allows me to view the world through a unifying lens.</p>
+  <main class="about">
+    <section class="intro">
+      <h3>About Me</h3>
+      <p>Hello, I’m <strong>Aniket Dash</strong>. I recently graduated with a degree in Data Science and completed my internship with <a href="https://www.cropin.com/">CropIn</a>.</p>
+      <p>I’ve always been drawn to stories, how they map thoughts into existence. My curiosity often lies in seeing how separate ideas connect and form a single narrative.</p>
+      <p>This instinct for connection shapes how I approach both data and design through patterns, balance, and structure.</p>
+    </section>
 
     <hr>
-    <h3>Brief History</h3>
-    <h4>Till 2018</h4>
-    <p>Born in Sunabeda, Koraput, I wasn’t the top of my class, but I was endlessly curious and that helped me stay above water. I was quite good at all kinds of sports and movement.</p>
-    <h4>2019-2021</h4>
-    <p>After school, I got into <a href="https://outr.ac.in/">OUTR</a>( formerly CET) to study Applied Physics. But I mostly found myself playing guitar in the college band that’s where I spent the majority of my time (and heart).</p>
-    <h4>2021-2025</h4>
-    <p>I eventually dropped out and joined <a href="https://study.iitm.ac.in/ds/">IIT, Madras</a> to study data science. I started to learn to code from scratch, revisited complex mathematics and naturally got gravitated towards deep learning. The realization that a model's ability to <strong>learn and adapt</strong> is inspired from the human brain acted as a catalyst for me to get deeper into it. </p>
-    <p>My internship at CropIn was a great experience that allowed me to dive deeper into <strong>earth observation</strong>. With guidance from <a href="https://www.linkedin.com/in/ravikant-bhargav/">Ravikanta Bhargava</a> and <a href="https://www.linkedin.com/in/deshwani/">Deshwani E</a>, I worked on cloud removal networks and contrastive learning methods like SimCLR for crop monitoring.</p>
 
-    </p>
+    <section class="history">
+      <h3>Brief History</h3>
+
+      <h4>Till 2018</h4>
+      <p>Born in Sunabeda, Koraput, I wasn’t the top of my class, but I was endlessly curious. I played every sport I could and learned from motion and rhythm.</p>
+
+      <h4>2019–2021</h4>
+      <p>I joined <a href="https://outr.ac.in/">OUTR</a> (formerly CET) to study Applied Physics. Most of my time, however, was spent playing guitar in the college band. That’s where I truly learned collaboration and flow.</p>
+
+      <h4>2021–2025</h4>
+      <p>I later joined <a href="https://study.iitm.ac.in/ds/">IIT Madras</a> to study Data Science. I started from scratch, learning to code, revisiting mathematics, and diving into deep learning.</p>
+      <p>The realization that a model’s ability to <strong>learn and adapt</strong> is inspired by the human brain changed everything for me. My internship at CropIn deepened my interest in <strong>earth observation</strong>, working under <a href="https://www.linkedin.com/in/ravikant-bhargav/">Ravikanta Bhargava</a> and <a href="https://www.linkedin.com/in/deshwani/">Deshwani E</a> on cloud removal networks and contrastive learning methods like SimCLR.</p>
+    </section>
+
     <hr>
-    <p>As a child, I had a box full of unused gadgets like old speakers, casettes, VCRs, radios, and remotes that I loved taking apart just to see how they worked. 
-      That habit of deconstructing things to understand their inner workings has stayed with me. Even today, whether it’s a product or a process, I instinctively break it down to see how it can be rebuilt better. At one point, I even attempted to build an arc reactor because, naturally, building Iron Man’s suit felt like a solid backup career plan.</p>
+
+    <section class="curiosity">
+      <p>As a child, I had a box full of unused gadgets, speakers, VCRs, radios, and remotes, all of which I’d take apart just to see how they worked.</p>
+      <p>That habit of deconstructing things to understand their inner workings stayed with me. Today, whether it’s a model or a product, I still feel the need to break it down, not to destroy it, but to rebuild it better.</p>
+      <p>At one point, I even tried to build an arc reactor, because building Iron Man’s suit felt like a solid backup career plan.</p>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Aniket Dash</p>
   </footer>
+
+  <script>
+    // Scroll fade-in for sections
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+  </script>
 </body>
 </html>

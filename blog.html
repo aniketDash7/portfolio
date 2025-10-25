@@ -1,68 +1,90 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog - Aniket Dash</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+  <!-- Header -->
   <header>
     <h1><a href="index.html">Aniket Dash</a></h1>
     <nav>
       <a href="media.html">Media</a>
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <h3>Blog & Writings</h3>
-    <ul class="blog-list">
-      <li>
-        <a href="https://www.linkedin.com/pulse/building-cloud-free-landsat-pipeline-remote-sensing-analysis-dash-e4cdc/?trackingId=m2nfjtC8SbiYpuei2zQJcg%3D%3D" target="_blank">
-          <h3>Building a Cloud-Free Landsat Pipeline For Remote Sensing Analysis </h3>
-          <p>Satellite - Google Drive pipeline using <strong>Google Earth Engine</strong></p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/pulse/gradient-descent-i-see-aniket-dash-pf4de/?trackingId=oqH79bEmQIKnfGqUPw3iPg%3D%3D" target="_blank">
-          <h3>Gradient Descent : as I see it</h3>
-          <p>Deep dive into one of the most important aspects of the <strong>neural network architecture.</strong></p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/pulse/gradient-descent-i-see-aniket-dash-pf4de/?trackingId=oqH79bEmQIKnfGqUPw3iPg%3D%3D" target="_blank">
-          <h3>Diving into RAGs: Building my First Chatbot and Lessons Learned</h3>
-          <p>My first encounter with <strong>Retrieval Augmented Generation</strong> and chatbots.</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/@aniket.addash/recommendation-engine-and-feelings-38d9842e8ce1" target="_blank">
-          <h3>Recommendation engine and feelings.</h3>
-          <p>Exploring how <strong>feelings and emotions can be vectorized.</strong> </p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/pulse/hypothesis-testing-taxi-fare-data-in-depth-analysis-aniket-dash-4rjsc/?trackingId=qBlbS1aIaWJQ4yhn2eiRAw%3D%3D" target="_blank">
-          <h3>Hypothesis Testing with Taxi Fare Data: An In-Depth Analysis</h3>
-          <p>Exploring the differences in fare amounts between <strong>payment methods (card or cash)</strong> </p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/pulse/time-series-forecasting-xgboost-comprehensive-guide-aniket-dash-4drvc/?trackingId=L7ej97HEDNC6DzNKlD2o5g%3D%3D" target="_blank">
-          <h3>Time Series Forecasting with XGBoost: A Comprehensive Guide</h3>
-          <p>Time Series Analysis and forecasting of <strong>Power Consumption in the US</strong> </p>
-        </a>
-      </li>
-      <!-- Add more entries as you write -->
-    </ul>
+    <section class="blog-intro">
+      <h2>Blog & Writings</h2>
+      <p>Reflections, insights, and experiments from my journey through data, design, and discovery.</p>
+    </section>
+
+    <section class="blog-list">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/pulse/building-cloud-free-landsat-pipeline-remote-sensing-analysis-dash-e4cdc/?trackingId=m2nfjtC8SbiYpuei2zQJcg%3D%3D" target="_blank" rel="noopener noreferrer">
+            <h3>Building a Cloud-Free Landsat Pipeline For Remote Sensing Analysis</h3>
+            <p>Satellite-to-Drive automation using <strong>Google Earth Engine</strong>.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/pulse/gradient-descent-i-see-aniket-dash-pf4de/?trackingId=oqH79bEmQIKnfGqUPw3iPg%3D%3D" target="_blank" rel="noopener noreferrer">
+            <h3>Gradient Descent: As I See It</h3>
+            <p>A deep dive into one of the most fundamental ideas in <strong>neural networks</strong>.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/pulse/gradient-descent-i-see-aniket-dash-pf4de/?trackingId=oqH79bEmQIKnfGqUPw3iPg%3D%3D" target="_blank" rel="noopener noreferrer">
+            <h3>Diving into RAGs: Building My First Chatbot and Lessons Learned</h3>
+            <p>My first hands-on experience with <strong>Retrieval Augmented Generation</strong>.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://medium.com/@aniket.addash/recommendation-engine-and-feelings-38d9842e8ce1" target="_blank" rel="noopener noreferrer">
+            <h3>Recommendation Engine and Feelings</h3>
+            <p>Exploring how <strong>emotions can be vectorized</strong> and modeled computationally.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/pulse/hypothesis-testing-taxi-fare-data-in-depth-analysis-aniket-dash-4rjsc/?trackingId=qBlbS1aIaWJQ4yhn2eiRAw%3D%3D" target="_blank" rel="noopener noreferrer">
+            <h3>Hypothesis Testing with Taxi Fare Data</h3>
+            <p>Analyzing fare differences between <strong>payment methods (card vs cash)</strong>.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/pulse/time-series-forecasting-xgboost-comprehensive-guide-aniket-dash-4drvc/?trackingId=L7ej97HEDNC6DzNKlD2o5g%3D%3D" target="_blank" rel="noopener noreferrer">
+            <h3>Time Series Forecasting with XGBoost</h3>
+            <p>Forecasting <strong>power consumption</strong> trends in the US using machine learning.</p>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Aniket Dash</p>
   </footer>

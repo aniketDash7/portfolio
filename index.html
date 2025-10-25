@@ -1,82 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Aniket Dash</title>
+  <title>Aniket Dash</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-  
-  
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Aniket Dash</h1>
-    <nav>
+  <header class="site-header">
+    <h1 class="logo">Aniket Dash</h1>
+    <nav class="nav">
       <a href="blog.html">Blog</a>
+      <a href="work.html">Work</a>
       <a href="media.html">Media</a>
       <a href="about.html">About</a>
+      <a href="music.html">Music</a>
     </nav>
   </header>
 
   <main>
-    <div class="container">
-      <img src="assets/img/hs3.JPG" class="profile-img" />
-      <h1>I’m Aniket.</h1>
-      <p class="subtitle">Data science | Remote Sensing | Music.</p>
-      <p class="muted">Working at the intersection of remote sensing, bioacoustics and deep learning.</p>
-      <div class="btn-group">
-        <a href="work.html" class="btn">WORK</a>
-        <a href="https://www.linkedin.com/in/aniket-dash-5416941ba/" class="btn" target="_blank" rel="noopener noreferrer">CONTACT</a>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="hero-container">
+        <img src="assets/img/hs3.JPG" alt="Aniket Dash" class="profile-img">
+
+        <div class="hero-text">
+          <h1>Aniket Dash</h1>
+          <p class="tagline">Machine Learning · Data · Music Production</p>
+
+          <p class="bio">
+            My work aims to develop multimodal AI systems that learn from images, language, and sound to create more natural and connected intelligence.
+          </p>
+
+          <div class="social-links">
+            <a href="assets/docs/Aniket_Dash_CV.pdf" target="_blank">CV</a>
+            <a href="mailto:aniketdash7@gmail.com">Email</a>
+            <a href="https://github.com/aniketDash7" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/aniketds/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
       </div>
-    </div>
-  
-    <h3>Recent Work</h3>
-    <ul>
-      <li>Kaggle: <a href="https://github.com/aniketDash7/denoisy" target="_blank" rel="noopener noreferrer">Denoisy </a> for in-browser low light photo denoiser</li>
-      <li>Article: <a href="https://medium.com/@aniket.addash/recommendation-engine-and-feelings-38d9842e8ce1" target="_blank" rel="noopener noreferrer">Recommendation Engines and Feelings</a> - Towards Data Science</li>
-      <li>Article: <a href="https://www.linkedin.com/pulse/building-cloud-free-landsat-pipeline-remote-sensing-analysis-dash-e4cdc/?trackingId=3SYiJWwRTAv2%2F6w5VoGBaQ%3D%3D" target="_blank" rel="noopener noreferrer">Building a Cloud-Free Landsat Pipeline For Remote Sensing Analysis </a></li>
-      <li>IITM: <a href="https://github.com/nuz-iitm/soft-engg-project-sep-2024-se-sep-28" target="_blank" rel="noopener noreferrer">EduSync</a> - Application leveraging GenAI for student management and tracking</li>
-    </ul>
+    </section>
 
-    <div class="projects-grid">
-      <a href="https://github.com/aniketDash7/denoisy" class="project" target="_blank" rel="noopener noreferrer">
-        <img src="assets\img\dv.gif" alt="Denoisy">
-        <p><strong>Denoisy</strong> Image super resolution and denoising interface for low light images.</p>
-      </a>
-      
-      <a href="https://github.com/aniketDash7/CMSN_experiments-" class="project" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/crv.gif" alt="CMSN">
-        <p><strong>Cloud Removal with CMSN</strong> Implementation of a Coarse to Refined Network to evaluate the NDVI Values.</p>
-      </a>
-      
-      <a href="https://github.com/aniketDash7/SimCLR" class="project" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/sv.gif" alt="SIMCLR">
-        <p><strong>Agri-scene classifier using simCLR</strong> Implementation of SimCLR using a Resnet-18 backbone identification of suitable areas for agricultural activities.</p>
-      </a>  
-      <a href="https://github.com/aniketDash7/fake_news_detection" class="project" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/fn.jpg" alt="SIMCLR">
-        <p><strong>Fake News Detection in Malayali Languages</strong> using custom designed neural network architecture, logistic regression and random forest classifier.</p>
-      </a>  
-      <a href="https://github.com/aniketDash7/SimCLR" class="project" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/de.gif" alt="Depth Estimation">
-        <p><strong>Depth Estimation</strong> Generating depth maps from challenging low-light captures.</p>
-      </a> 
-      <a href="https://www.kaggle.com/code/aniketdash7/indictts-deepfake" class="project" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/mel.png" alt="Audio Classifier">
-        <p><strong>AI-Generated speech Detector</strong> across 16 Indian languages.</p>
-      </a>  
+    <!-- ===== NEWS SECTION ===== -->
+    <section class="news">
+      <h2>News</h2>
+      <hr class="section-line" />
+      <ul class="news-list">
 
-    </div>
+        <li><strong>Oct 2025 —</strong> Background Scoring for a short movie : 'Drew a Picasso'</li>
+        <li><strong>Sep 2025 —</strong><em> New edition on Geophonic :</em><a href="https://www.linkedin.com/pulse/getting-started-langgraph-ollama-agentic-workflows-aniket-dash-f1nuc/?trackingId=iml9o5zDSN%2BFyRisE6CJyg%3D%3D" target="_blank"> Getting Started with LangGraph, Ollama and Agentic workflows.</a></li>
+        <li><strong>Sep 2025 —</strong> Deployed <em><a href="https://github.com/aniketDash7/ChangeSense" target="_blank">ChangeSense v2</a></em> with automated CI/CD using Docker and GitHub Actions.</li>
+        <li><strong>Aug 2025 —</strong><em> New edition on Geophonic :</em> <a href="https://www.linkedin.com/pulse/understanding-cloud-native-geospatial-data-aniket-dash-vulpc/?trackingId=HPeB5Xd%2FQmSKLPOBDv9vBg%3D%3D" target="_blank">Understanding Cloud Native Geospatial Data</a></li>
+        <li><strong>June 2025 —</strong><em> New edition on Geophonic :</em> <a href="https://www.linkedin.com/pulse/mapping-politics-water-aniket-dash-vykge/?trackingId=IC53r0gyRCiMdluglSQLBw%3D%3D" target="_blank">Mapping the Politics of Water</a></li>
+      </ul>
+    </section>
 
+    <!-- ===== RECENT PROJECTS ===== -->
+    <section class="projects">
+      <h2>Recent Projects</h2>
+      <hr class="section-line" />
+
+      <!-- Project 1 -->
+      <div class="project">
+        <div class="project-header">
+          <div class="project-meta">
+            <h3>ChangeSense</h3>
+            <p>Building Instance Segmentation and Reporting</p>
+          </div>
+          <div class="project-desc">
+            <p>
+              ChangeSense is an instance segmentation model designed to detect 
+              and report changes in buildings or manmade structures in satellite imagery over time.
+            </p>
+            <p class="links">
+              [<a href="https://github.com/aniketDash7/ChangeSense" target="_blank">Code</a>] 
+              [<a href="https://arxiv.org/pdf/2102.06777" target="_blank">Paper</a>] 
+              [<a href="#">Visualization</a>]
+            </p>
+            <ul class="highlights">
+              <li>Fine-tuned YOLOv8</li>
+              <li>Flan-t5 model for natural language reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-slider">
+          <img src="assets/img/cs1.png" class="slider-image active" alt="CMSN sample 1" />
+          <img src="assets/img/cs2.png" class="slider-image" alt="CMSN sample 2" />
+          <button class="slider-btn prev">&#10094;</button>
+          <button class="slider-btn next">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <div class="project-header">
+          <div class="project-meta">
+            <h3>CMSN: Cloud Removal Network</h3>
+            <p>Inspired by 2022 ASOC Paper · Remote Sensing</p>
+          </div>
+          <div class="project-desc">
+            <p>
+              A multi-temporal synchronous network designed for reconstructing 
+              <strong>cloud-free Landsat imagery</strong> using coarse-to-refined fusion.
+            </p>
+            <p class="links">
+              [<a href="#">Code</a>] [<a href="#">Paper</a>] [<a href="#">Visualization</a>]
+            </p>
+            <ul class="highlights">
+              <li>30% improvement in temporal consistency metrics</li>
+              <li>Integrates ResFFTConv, SCM, and MFAM blocks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-slider">
+          <img src="assets/img/cr1.png" class="slider-image active" alt="CMSN sample 1" />
+          <img src="assets/img/cr2.png" class="slider-image" alt="CMSN sample 2" />
+          <img src="assets/img/cr3.png" class="slider-image" alt="CMSN sample 3" />
+          <button class="slider-btn prev">&#10094;</button>
+          <button class="slider-btn next">&#10095;</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Aniket Dash</p>
   </footer>
+
+  <script>
+    document.querySelectorAll('.project-slider').forEach(slider => {
+      const images = slider.querySelectorAll('.slider-image');
+      let current = 0;
+
+      const showImage = (index) => {
+        images.forEach((img, i) => img.classList.toggle('active', i === index));
+      };
+
+      slider.querySelector('.prev').addEventListener('click', () => {
+        current = (current - 1 + images.length) % images.length;
+        showImage(current);
+      });
+
+      slider.querySelector('.next').addEventListener('click', () => {
+        current = (current + 1) % images.length;
+        showImage(current);
+      });
+    });
+  </script>
 </body>
 </html>
