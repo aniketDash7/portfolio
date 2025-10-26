@@ -234,7 +234,7 @@ main ul li p {
 ========================================= */
 /* ===== PROJECT LAYOUT ===== */
 .project {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   padding: 1.5rem;
   border: 1px solid #eee;
   border-radius: 10px;
@@ -249,7 +249,7 @@ main ul li p {
   position: relative;
   display: inline-block;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0.4rem;
   color: #0f172a;
   z-index: 1;
@@ -273,7 +273,6 @@ main ul li p {
   flex-direction: column; /* stack meta and desc vertically */
   gap: 0.6rem; /* consistent gap between meta and description */
   border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 1rem;
   margin-bottom: 1rem; /* adds uniform bottom spacing before images */
 }
 
@@ -283,7 +282,7 @@ main ul li p {
 
 .project-meta h3 {
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   margin-bottom: 0.2rem;
   color: #111;
 }
@@ -297,8 +296,7 @@ main ul li p {
   flex: 2;
   font-size: 0.93rem;
   line-height: 1.5;
-  color: #333;
-  margin-top: 0.2rem; /* subtle visual buffer */
+  color: #333; /* subtle visual buffer */
 }
 
 /* ===== IMAGE SLIDER (Minimal) ===== */
