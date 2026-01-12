@@ -130,7 +130,62 @@
     <p>© 2025</p>
   </footer>
 
+  <!-- Whitepaper Modal -->
+  <div id="whitepaper-modal" class="modal-overlay" onclick="if(event.target === this) closeModal()">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="wp-body">
+        <h1>The Authenticity Protocol</h1>
+        <h2>Inverting the Burden of Proof</h2>
+        <p><strong>Abstract:</strong> In an era where generative AI can synthesize reality with near-perfect fidelity,
+          existing verification frameworks—watermarking and detection—are fundamentally flawed. They place the burden of
+          proof on the detector, an arms race that defenders are destined to lose.</p>
+        <p>This whitepaper proposes the <strong>Authenticity Protocol</strong>, a cryptographic framework that inverts
+          this paradigm. Instead of detecting fakes, we must cryptographically bind identity to origin at the point of
+          creation.</p>
+
+        <h2>Core Principles</h2>
+        <ul>
+          <li><strong>Identity-Bound Creation:</strong> Every piece of content is signed by a verified identity key.
+          </li>
+          <li><strong>Chain of Custody:</strong> Modifications are appended to a ledger, preserving the original
+            provenance.</li>
+          <li><strong>Default Distrust:</strong> Any unsigned content is treated as synthetic by default.</li>
+        </ul>
+
+        <h2>Implementation Strategy</h2>
+        <p>We leverage decentralized identity (DID) standards combined with hardware-backed signing (e.g., C2PA) to
+          create a tamper-evident media ecosystem. This shifts the verification cost from complex, unreliable AI
+          detection models to deterministic cryptographic checks.</p>
+
+        <p><em>Full implementation details and architectural diagrams available in the complete PDF.</em></p>
+        <button class="btn-print" onclick="printWhitepaper()">DOWNLOAD PDF</button>
+      </div>
+    </div>
+  </div>
+
   <script src="assets/js/retro-animations.js"></script>
+
+  <script>
+    function openModal() {
+      const modal = document.getElementById('whitepaper-modal');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('whitepaper-modal');
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function printWhitepaper() {
+      // Since we don't have the actual PDF file yet, we can either print the page or alert.
+      // For now, let's open the print dialog for the modal content or just the page.
+      // Or better, let's just download the provided PDF if available, or print window.
+      window.open('assets/docs/AUTHENTICITY_PROTOCOL.pdf', '_blank');
+    }
+  </script>
 </body>
 
 </html>
