@@ -1003,47 +1003,7 @@ body.music-theme .nav-arrow:hover {
   position: relative;
 }
 
-.track-card:hover {
-  border-color: var(--theme-primary);
-  box-shadow: 0 0 25px var(--theme-glow-strong);
-  transform: translateY(-5px);
-}
-
-.track-number {
-  font-family: var(--font-mono);
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--theme-primary);
-  opacity: 0.3;
-  line-height: 1;
-  margin-bottom: 1rem;
-}
-
-.track-card h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--theme-primary);
-  margin-bottom: 1.5rem;
-  line-height: 1.3;
-}
-
-.track-card audio {
-  width: 100%;
-  height: 40px;
-  outline: none;
-}
-
-.track-card audio::-webkit-media-controls-panel {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--theme-primary);
-}
-
-.track-card audio::-webkit-media-controls-current-time-display,
-.track-card audio::-webkit-media-controls-time-remaining-display {
-  color: var(--theme-primary);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-}
+/* Legacy Audio Player Styles Removed */
 
 @media (max-width: 768px) {
   .music-tracks {
@@ -1051,7 +1011,21 @@ body.music-theme .nav-arrow:hover {
   }
 
   .text-block {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .checkpoint-container {
+    padding: 5rem 1.5rem 2rem;
+    /* Reduced padding for mobile */
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    /* Smaller hero text */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
   }
 }
 
@@ -1063,6 +1037,52 @@ body.music-theme .nav-arrow:hover {
 /* =========================================
    BLOG GRID (Uniform & Compact)
 ========================================= */
+@media (max-width: 768px) {
+  .music-tracks {
+    grid-template-columns: 1fr;
+  }
+
+  .text-block {
+    padding: 1rem;
+  }
+
+  .checkpoint-container {
+    padding: 5rem 1.5rem 2rem;
+    /* Reduced padding for mobile */
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    /* Smaller hero text */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Reset Hero Image for Mobile */
+  .hero-image {
+    position: static !important;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+/* Hero Image Desktop Style */
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--theme-secondary);
+  filter: grayscale(100%);
+}
+
 .checkpoint-container {
   max-width: 1200px;
   /* Widen for grid layouts */
