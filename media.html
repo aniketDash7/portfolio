@@ -1,89 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Media - Aniket Dash</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>▸ MEDIA - ANIKET DASH</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1><a href="index.html">Aniket Dash</a></h1>
-    <nav>
-      <a href="blog.html">Blog</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="music.html">Music</a>
+  <!-- Top Navigation Icons -->
+  <nav class="top-nav">
+    <div class="nav-icons">
+      <a href="index.html" class="icon-btn" title="Home">HOME</a>
+      <a href="work.html" class="icon-btn" title="Work">WORK</a>
+      <a href="blog.html" class="icon-btn active" title="Blog">BLOG</a>
+      <a href="media.html" class="icon-btn" title="Media">MEDIA</a>
+      <a href="about.html" class="icon-btn" title="About">ABOUT</a>
+      <a href="music.html" class="icon-btn" title="Music">MUSIC</a>
+    </div>
+  </nav>
 
-    </nav>
-  </header>
+  <main class="checkpoint-container">
+    <!-- Media Header -->
+    <section class="hero-checkpoint">
+      <div class="label-small">▸ VISUAL STORIES</div>
+      <h1 class="hero-title">MEDIA</h1>
+      <p class="hero-subtitle">Photography and visual exploration.</p>
 
-  <main class="media">
-    <section class="media-intro">
-      <h3>Media</h3>
-      <p>I’ve always been drawn to exploring hidden connections — parallels that emerge between ideas, disciplines, and experiences.</p>
-      <p><a href="https://www.instagram.com/unseenparallels/">Unseenparallels</a> is where I capture these visual stories — fragments of rhythm, geometry, and light.</p>
-      <p>I’d love for you to take a look.</p>
-    </section>
-
-    <section class="media-links">
-      <h3>Unseenparallels</h3>
-      <p>Find it on <a href="https://www.instagram.com/unseenparallels/" target="_blank">Instagram</a> and <a href="https://www.youtube.com/embed/kFHA_-2gTiY?si=k1Xa5LpZHCgkuwwo" target="_blank">YouTube</a>.</p>
-
-      <div class="instagram-grid">
-        <div class="insta-wrapper">
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHfheHQS2Lg/" data-instgrm-version="14"></blockquote>
-        </div>
-        <div class="insta-wrapper">
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C7RcptdK0N7/" data-instgrm-version="14"></blockquote>
-        </div>
+      <!-- Link to Instagram -->
+      <div class="link-card" style="max-width: 400px; margin: 2rem auto;">
+        <div class="card-icon">▸</div>
+        <a href="https://www.instagram.com/unseenparallels/" target="_blank" class="card-title"
+          style="text-decoration: none; color: inherit;">@UNSEENPARALLELS</a>
       </div>
     </section>
 
-    <hr>
-
+    <!-- Photo Gallery Container -->
     <section class="media-gallery">
-      <h3>A unique dataset for you.</h3>
-      <div class="masonry-grid">
-        <div class="masonry-item"><img src="assets/media/1.jpg" alt="Media 1"></div>  
-        <div class="masonry-item"><img src="assets/media/2.jpg" alt="Media 2"></div>
-        <div class="masonry-item"><img src="assets/media/3.jpg" alt="Media 3"></div> 
-        <div class="masonry-item"><img src="assets/media/4.jpg" alt="Media 4"></div>  
-        <div class="masonry-item"><img src="assets/media/5.jpg" alt="Media 5"></div>  
-        <div class="masonry-item"><img src="assets/media/11.jpg" alt="Media 6"></div>
-        <div class="masonry-item"><img src="assets/media/7.jpg" alt="Media 7"></div>
-        <div class="masonry-item"><img src="assets/media/8.jpg" alt="Media 8"></div>  
-
-        <h3>I enjoy skyscenes.</h3>
-
-        <div class="masonry-item"><img src="assets/media/9.jpg" alt="Media 9"></div>  
-        <div class="masonry-item"><img src="assets/media/12.JPG" alt="Media 10"></div>  
-        <div class="masonry-item"><img src="assets/media/13.JPG" alt="Media 11"></div> 
-        <div class="masonry-item"><img src="assets/media/14.jpg" alt="Media 12"></div>  
-        <div class="masonry-item"><img src="assets/media/15.jpg" alt="Media 13"></div>  
-        <div class="masonry-item"><img src="assets/media/10.jpg" alt="Media 14"></div>  
-        <div class="masonry-item"><img src="assets/media/16.jpg" alt="Media 15"></div>  
-        <div class="masonry-item"><img src="assets/media/17.jpg" alt="Media 16"></div>  
-        <div class="masonry-item"><img src="assets/media/18.jpg" alt="Media 17"></div>  
-        <div class="masonry-item"><img src="assets/media/19.jpg" alt="Media 18"></div>  
-        <div class="masonry-item"><img src="assets/media/20.jpg" alt="Media 19"></div>  
-        <div class="masonry-item"><img src="assets/media/21.jpg" alt="Media 20"></div>  
-        <div class="masonry-item"><img src="assets/media/22.jpg" alt="Media 21"></div>  
-        <div class="masonry-item"><img src="assets/media/23.jpg" alt="Media 22"></div>  
+      <div id="masonry-root" style="opacity: 0; transition: opacity 0.5s ease;">
+        <!-- Images will be distributed by JS -->
+        <img src="assets/media/1.jpg" alt="Visual 1" class="masonry-img">
+        <img src="assets/media/2.jpg" alt="Visual 2" class="masonry-img">
+        <img src="assets/media/3.jpg" alt="Visual 3" class="masonry-img">
+        <img src="assets/media/4.jpg" alt="Visual 4" class="masonry-img">
+        <img src="assets/media/5.jpg" alt="Visual 5" class="masonry-img">
+        <img src="assets/media/11.jpg" alt="Visual 6" class="masonry-img">
+        <img src="assets/media/7.jpg" alt="Visual 7" class="masonry-img">
+        <img src="assets/media/8.jpg" alt="Visual 8" class="masonry-img">
+        <img src="assets/media/9.jpg" alt="Visual 9" class="masonry-img">
+        <img src="assets/media/12.JPG" alt="Visual 10" class="masonry-img">
+        <img src="assets/media/13.JPG" alt="Visual 11" class="masonry-img">
+        <img src="assets/media/14.jpg" alt="Visual 12" class="masonry-img">
+        <img src="assets/media/15.jpg" alt="Visual 13" class="masonry-img">
+        <img src="assets/media/10.jpg" alt="Visual 14" class="masonry-img">
+        <img src="assets/media/16.jpg" alt="Visual 15" class="masonry-img">
+        <img src="assets/media/17.jpg" alt="Visual 16" class="masonry-img">
+        <img src="assets/media/18.jpg" alt="Visual 17" class="masonry-img">
+        <img src="assets/media/19.jpg" alt="Visual 18" class="masonry-img">
+        <img src="assets/media/20.jpg" alt="Visual 19" class="masonry-img">
+        <img src="assets/media/21.jpg" alt="Visual 20" class="masonry-img">
+        <img src="assets/media/22.jpg" alt="Visual 21" class="masonry-img">
+        <img src="assets/media/23.jpg" alt="Visual 22" class="masonry-img">
       </div>
     </section>
-
-    <script async src="//www.instagram.com/embed.js"></script>
   </main>
 
-  <footer>
-    <p>© 2025 Aniket Dash</p>
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <button class="nav-arrow left" onclick="window.location.href='blog.html'">←</button>
+    <button class="nav-arrow right" onclick="window.location.href='about.html'">→</button>
+  </div>
+
+  <footer class="checkpoint-footer">
+    <p>© 2025</p>
   </footer>
+
+  <script src="assets/js/retro-animations.js"></script>
+
+  <!-- Masonry Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const root = document.getElementById('masonry-root');
+      const images = Array.from(root.querySelectorAll('.masonry-img'));
+
+      // Configuration
+      const gap = 10;
+
+      function layoutMasonry() {
+        // Determine column count based on width
+        const containerWidth = root.offsetWidth;
+        let colCount = 3;
+        if (containerWidth < 768) colCount = 2;
+        if (containerWidth < 500) colCount = 1;
+
+        // Clear root but keep images in memory
+        root.innerHTML = '';
+        root.style.display = 'flex';
+        root.style.alignItems = 'flex-start'; // Top alignment
+        root.style.gap = `${gap}px`;
+
+        // Create columns
+        const columns = [];
+        for (let i = 0; i < colCount; i++) {
+          const col = document.createElement('div');
+          col.style.display = 'flex';
+          col.style.flexDirection = 'column';
+          col.style.flex = '1';
+          col.style.gap = `${gap}px`;
+          // Force styles to remove borders
+          col.style.border = 'none';
+          col.style.padding = '0';
+
+          root.appendChild(col);
+          columns.push(col);
+        }
+
+        // Distribute images
+        images.forEach((img, i) => {
+          // Basic Round Robin for now (or smallest height if we waited for load)
+          // Since we want fast layout, we'll do round robin which mimics Pinterest order
+          // roughly if images are random heights.
+          // Pinterest actually uses shortest-column. 
+          // Let's use shortest column logic if images are loaded, else round robin.
+
+          // Simple Round Robin for stability without waiting for load events
+          const colIndex = i % colCount;
+
+          // Apply styles to image
+          img.style.width = '100%';
+          img.style.display = 'block';
+          img.style.borderRadius = '4px';
+          img.style.border = 'none';
+          img.style.outline = 'none';
+
+          columns[colIndex].appendChild(img);
+        });
+
+        root.style.opacity = '1';
+      }
+
+      // Run layout
+      layoutMasonry();
+
+      // Re-run on resize
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(layoutMasonry, 200);
+      });
+
+      // Ensure images load to prevent layout shift if we were checking heights
+      // (Not strict requirement for round robin)
+    });
+  </script>
 </body>
+
 </html>

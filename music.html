@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Music - Aniket Dash</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 
-  <!-- Fonts -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>▸ MUSIC - ANIKET DASH</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-  <!-- Header -->
-  <header>
-    <h1><a href="index.html">Aniket Dash</a></h1>
-    <nav>
-      <a href="blog.html">Blog</a>
-      <a href="media.html">Media</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-
-  <!-- Main -->
-  <main>
-   <section class="music-section">
-    <h1>Music ( Under construction )</h1>
-    <h3>None of the links would work</h3>
-    <div class="music-grid">
-      <div class="music-card" style="--gradient: linear-gradient(120deg, #d4e0ff, #8b8fa3);">
-        <div class="music-art"></div>
-        <h2>Nishiasakusa</h2>
-        <audio controls>
-          <source src="samples/nishiasakusa.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <div class="music-card" style="--gradient: linear-gradient(135deg, #fcd1ff, #e0f0ff);">
-        <div class="music-art"></div>
-        <h2>G9</h2>
-        <audio controls>
-          <source src="samples/g9.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <div class="music-card" style="--gradient: linear-gradient(135deg, #ffb6d9, #fce4ff);">
-        <div class="music-art"></div>
-        <h2>Bit</h2>
-        <audio controls>
-          <source src="samples/bit.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <div class="music-card" style="--gradient: linear-gradient(145deg, #d7d7d7, #fff47a);">
-        <div class="music-art"></div>
-        <h2>D3</h2>
-        <audio controls>
-          <source src="samples/d3.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-
-      <div class="music-card" style="--gradient: linear-gradient(120deg, #ff9040, #715fff);">
-        <div class="music-art"></div>
-        <h2>Weekend</h2>
-        <audio controls>
-          <source src="samples/weekend.mp3" type="audio/mpeg">
-        </audio>
-      </div>
+<body class="music-theme">
+  <!-- Top Navigation Icons -->
+  <nav class="top-nav">
+    <div class="nav-icons">
+      <a href="index.html" class="icon-btn" title="Home">HOME</a>
+      <a href="work.html" class="icon-btn" title="Work">WORK</a>
+      <a href="blog.html" class="icon-btn" title="Blog">BLOG</a>
+      <a href="media.html" class="icon-btn" title="Media">MEDIA</a>
+      <a href="about.html" class="icon-btn" title="About">ABOUT</a>
+      <a href="music.html" class="icon-btn active" title="Music">MUSIC</a>
     </div>
-  </section>
+  </nav>
+
+  <main class="checkpoint-container">
+    <!-- Music Header -->
+    <section class="hero-checkpoint">
+      <div class="label-small">▸ SONIC ART</div>
+      <h1 class="hero-title">MUSIC</h1>
+      <p class="hero-subtitle">Professional compositions and sound design.</p>
+    </section>
+
+    <!-- Music Embeds -->
+    <section class="music-showcase" style="margin-top: 1rem;">
+
+      <!-- Spotify Section -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">
+          LATEST RELEASES</h3>
+        <!-- Spotify Embed Placeholder -->
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/0hnLR1gosI3Kdwjsnj0oIx?si=d61e661e43664159" width="100%"
+          height="352" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+      <!-- YouTube Section -->
+      <div>
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.2rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">
+          VISUALIZERS</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          <!-- Video 1 -->
+          <iframe width="100%" height="250" src="https://www.youtube.com/embed/qf_TUMt3YPo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px;"></iframe>
+          <!-- Video 2 -->
+          <iframe width="100%" height="250" src="https://www.youtube.com/embed/6YidH8JjMPA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px;"></iframe>
+          <iframe width="100%" height="250" src="https://www.youtube.com/embed/oT4dkf5kb-g" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 8px;"></iframe>
+
+        </div>
+      </div>
+
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Aniket Dash</p>
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <button class="nav-arrow left" onclick="window.location.href='about.html'">←</button>
+    <button class="nav-arrow right" onclick="window.location.href='index.html'">→</button>
+  </div>
+
+  <footer class="checkpoint-footer">
+    <p>© 2025</p>
   </footer>
+
+  <script src="assets/js/retro-animations.js"></script>
 </body>
+
 </html>

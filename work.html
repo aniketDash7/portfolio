@@ -1,356 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work - Aniket Dash</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>▸ WORK - ANIKET DASH</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+<body>
+  <!-- Top Navigation Icons -->
+  <nav class="top-nav">
+    <div class="nav-icons">
+      <a href="index.html" class="icon-btn" title="Home">HOME</a>
+      <a href="work.html" class="icon-btn active" title="Work">WORK</a>
+      <a href="blog.html" class="icon-btn" title="Blog">BLOG</a>
+      <a href="media.html" class="icon-btn" title="Media">MEDIA</a>
+      <a href="about.html" class="icon-btn" title="About">ABOUT</a>
+      <a href="music.html" class="icon-btn" title="Music">MUSIC</a>
+    </div>
+  </nav>
 
-  <body>
-    <!-- ====== HEADER ====== -->
-    <header>
-      <h1><a href="index.html">Aniket Dash</a></h1>
-      <nav>
-        <a href="blog.html">Blog</a>
-        <a href="media.html">Media</a>
-        <a href="about.html">About</a>
-        <a href="music.html">Music</a>
-      </nav>
-    </header>
+  <main class="checkpoint-container">
+    <!-- Projects Archive Header -->
+    <section class="hero-checkpoint work-hero">
+      <div class="label-small">▸ MY WORK</div>
+      <h1 class="hero-title">PROJECTS</h1>
 
-    <!-- ====== MAIN CONTENT ====== -->
-    <main>
-      <h3>Some of my work</h3>
-      <p>
-        I develop data-driven tools and machine learning models to extract
-        insights from satellite imagery and audio signals, enabling a deeper
-        understanding of our environment.
-      </p>
-      <p>
-        I also enjoy experimenting with audio and visual data, often creating
-        intuitive interfaces that bridge complex models with real-world
-        usability.
-      </p>
-      <p>I mostly work with:</p>
+      <!-- Big Project Count -->
+      <p class="hero-subtitle">Production ML systems and data tools.</p>
+    </section>
 
-      <ul>
-        <li>
-          <p>Python, PyTorch, NumPy, OpenCV for model building and data processing</p>
-        </li>
-        <li>
-          <p>SQL, Pandas, Matplotlib/Seaborn for analysis and storytelling</p>
-        </li>
-        <li>
-          <p>Streamlit, HTML/CSS, JavaScript for interactive interfaces</p>
-        </li>
-      </ul>
-
-      <!-- ====== PROJECTS SECTION ====== -->
-      <section class="projects">
-        <h2>Recent Projects</h2>
-        <hr class="section-line" />
-
-        <!-- ====== Project 1: ChangeSense ====== -->
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>ChangeSense</h3>
-              <p>Building Instance Segmentation and Reporting</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                ChangeSense is an instance segmentation model designed to detect
-                and report changes in buildings or manmade structures in
-                satellite imagery over time.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/ChangeSense" target="_blank">Code</a>]
-                [<a href="https://arxiv.org/pdf/2102.06777" target="_blank">Paper</a>]
-              </p>
-              <ul class="highlights">
-                <li>Fine-tuned YOLOv8</li>
-                <li>Flan-t5 model for natural language reporting</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-slider">
-            <img src="assets/img/cs1.png" class="slider-image active" alt="CMSN sample 1" />
-            <img src="assets/img/cs2.png" class="slider-image" alt="CMSN sample 2" />
-            <button class="slider-btn prev">&#10094;</button>
-            <button class="slider-btn next">&#10095;</button>
-          </div>
+    <!-- Project Grid -->
+    <section class="project-grid">
+      <!-- Project: Sentinel -->
+      <div class="project-card" data-number="001">
+        <div class="project-number">01</div>
+        <h3>Sentinel</h3>
+        <p class="project-tagline">Explainable Fraud Defense</p>
+        <div class="project-tech">
+          <span>XGBoost</span>
+          <span>SHAP</span>
+          <span>FastAPI</span>
         </div>
+        <a href="https://github.com/aniketdash7/stripe-radar-shap" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <!-- ====== Project 2: Denoisy ====== -->
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Denoisy</h3>
-              <p>Independent Research · 2024</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                Denoisy is a low-light image restoration pipeline using hybrid
-                <strong>frequency–spatial priors</strong>. It leverages
-                FFT-based attention to enhance fine-grained image textures in
-                extreme illumination settings.
-              </p>
-              <p class="links">
-                [<a href="#">Code</a>] [<a href="#">Paper</a>]
-              </p>
-              <ul class="highlights">
-                <li>Optimized for real-time enhancement on edge GPUs</li>
-                <li>Outperforms U-Net baseline by +8% PSNR on night scenes</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-slider">
-            <img src="assets/img/dv1.png" class="slider-image active" alt="Denoisy output 1" />
-            <img src="assets/img/dv2.png" class="slider-image" alt="Denoisy output 2" />
-            <button class="slider-btn prev">&#10094;</button>
-            <button class="slider-btn next">&#10095;</button>
-          </div>
+      <!-- Project: Chronos -->
+      <div class="project-card" data-number="002">
+        <div class="project-number">02</div>
+        <h3>Chronos</h3>
+        <p class="project-tagline">Smart Payment Recovery</p>
+        <div class="project-tech">
+          <span>XGBoost</span>
+          <span>Time-series</span>
         </div>
+        <a href="https://github.com/aniketdash7/chronos-smart-retry" target="_blank" class="project-link">VIEW CODE
+          ▸</a>
+      </div>
 
-        <!-- ====== Project 3: CMSN ====== -->
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>CMSN: Cloud Removal Network</h3>
-              <p>Inspired by 2022 ASOC Paper · Remote Sensing</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                A multi-temporal synchronous network designed for reconstructing
-                <strong>cloud-free Landsat imagery</strong> using coarse-to-refined fusion.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/CMSN_experiments-">Code</a>] [<a href="https://pdf.sciencedirectassets.com/272637/1-s2.0-S1569843222X00083/1-s2.0-S1569843222002679/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQD9JfzhsV61dnZSxvrUndlMEDSIU3UYQLTwcHzYFwy5%2BAIhAOJG42c26g1N%2BGlcRyGvQyx2yJN9ssj08zwZn%2Fm7iCQtKrIFCG8QBRoMMDU5MDAzNTQ2ODY1IgxmbnYsHwOKS3M2NpIqjwWcSQXZ%2BnSfNQw3Tx%2Bgol8JN%2FcuTuF%2F9%2Fet2dcqXOVM11qlEYhf7tE99xiN8DFwwXqdLfdt5qVXAdg69qaGMMs8a63VOam5jvrNk78gEgM7466TahUeoHKqvdVZp1x3EEu2Emg9qCefVWnU8RhlN5kKOwwSD4y1KLBeEnlCK4gv2cTJlPyStMYA9eL4Gb3%2BxYZP67GrKJMWUCOM1IeY9ch%2FhG%2BsIkxeX3e4xo4oxZ05PA9pFMep9LDS5z%2FsBfTGwPTjKG6LOC4JWLhA9kiQ3B%2BDeRMLV%2B5yCqLWmSW8IeWMNZSq3lbGwWMiTC5BuTfSgLgP7cIu95E3O7tF76QK1TMn35Fxt4MPUH682PknpUZ1Ap8bBIgg9L%2B%2FzmJqIjgFkdrxVuKUKwNqESQYn0eMMLMJa8n7FhWlr4vqcjFIg7h9TMMcCBigTE0nLUR7PFOPXVxKIrT0vJcmkIT3%2FSJzHgsGxJZsS1uGzgnDqhMQRf6gFP7xT%2FXjhY8RtGbEsr%2B%2Fmwcdq54h3gtaNGqca8XW3o9QZzD6%2FA2tEAS3oVbB%2BmOvuVA%2FTpxIdyNw9XFRm2JSG0i3nxmLlo7RzkbFvxawbDNveRqMf0Q7BdYibUmcCSwb1E6dKAeIQWGudolzsykoHeGSYo%2FwJ7jnzhj5csleVKldZGY%2FiUx4UYkZDULWP6voiGpuE%2Fpc7Db22u0MINJzC16Prwy8wKJ2RAMn6No057wQONzdyeH%2BS41E26t2Ya4LSHga1rJR2cLqDVm6UL29kqWJm%2F35OYxqn9uM%2BY8T7jCdSvrtJdUIismG75Ro9v7o60ieX7Up9GZZqpasbO0ua0vl6P3jiIOkPI9RpNle4L7XA2LPybD8krXEhKjdRPbfMOXM8ccGOrABSp98w9hfzICHLV%2BLw2RRb9O9hQan%2FB%2Fkt%2Ba58Z82M%2FgeDl0xI3bnUr6m2lRIaQ8KoraoFt2m9M3Q1z8AO1gdqXEcSb%2BMXTbYeFf6orsz3ES3Xiljb7Ioc3IX5WwxDDcVXLFqnNAO2pN6THnRXt03%2FmYVYySdoe4ZRuSmRf3hwKpuadXiVWQD5NsCunul%2BNTZiAaHNliokC6J322%2FoI%2FztJWX4jW2BER2Dhy5lGPXEac%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251025T071022Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY54VKUZNS%2F20251025%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d16e4f0422a2232e4acf46de914779f3d9f5c0f1e4fa4a31525a642acb6688a9&hash=9c9bf553625cf5de126c44d6e4c3385c40713b89628cdebb8bdf9cd638d9949c&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1569843222002679&tid=spdf-106b1531-bf44-432e-b0d5-bb35bcd75804&sid=4e6eafb3865c484e469b03a1674268c2ad2agxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=130a5c5a5c080a530003&rr=993fe4caace128cd&cc=in">Paper</a>]
-              </p>
-              <ul class="highlights">
-                <li>30% improvement in temporal consistency metrics</li>
-                <li>Integrates ResFFTConv, SCM, and MFAM blocks</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-slider">
-            <img src="assets/img/cr1.png" class="slider-image active" alt="CMSN sample 1" />
-            <img src="assets/img/cr2.png" class="slider-image" alt="CMSN sample 2" />
-            <img src="assets/img/cr3.png" class="slider-image" alt="CMSN sample 3" />
-            <button class="slider-btn prev">&#10094;</button>
-            <button class="slider-btn next">&#10095;</button>
-          </div>
+      <!-- Project: Truth Seeker -->
+      <div class="project-card" data-number="003">
+        <div class="project-number">03</div>
+        <h3>Truth Seeker</h3>
+        <p class="project-tagline">Knowledge Graph Builder</p>
+        <div class="project-tech">
+          <span>Llama 3</span>
+          <span>React Flow</span>
         </div>
+        <a href="https://github.com/aniketdash7/truth-seeker" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <!-- ====== Project 4: Agri-scene Classifier ====== -->
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Agri-scene Classifier with SimCLR</h3>
-              <p>simCLR</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                Identifying agriculture zones using contrastive learning on
-                satellite images.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/SimCLR">Code</a>] [<a href="https://arxiv.org/pdf/2002.05709">Paper</a>]
-              </p>
-              <ul class="highlights">
-                <li>Used ResNet18 and ResNet50 for backbone</li>
-                <li>Gauging NDVI and classifying scenes</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-slider">
-            <img src="assets/img/sclr1.png" class="slider-image active" alt="SimCLR sample 1" />
-            <img src="assets/img/sclr2.png" class="slider-image" alt="SimCLR sample 2" />
-            <img src="assets/img/sclr3.png" class="slider-image" alt="SimCLR sample 3" />
-            <img src="assets/img/sclr4.png" class="slider-image" alt="SimCLR sample 4" />
-            <img src="assets/img/sclr5.png" class="slider-image" alt="SimCLR sample 5" />
-            <button class="slider-btn prev">&#10094;</button>
-            <button class="slider-btn next">&#10095;</button>
-          </div>
+      <!-- Project: ChangeSense -->
+      <div class="project-card" data-number="004">
+        <div class="project-number">04</div>
+        <h3>ChangeSense</h3>
+        <p class="project-tagline">Building Change Detection</p>
+        <div class="project-tech">
+          <span>YOLOv8</span>
+          <span>Flan-T5</span>
         </div>
+        <a href="https://github.com/aniketDash7/ChangeSense" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <!-- ====== Other Projects ====== -->
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>EduSync</h3>
-              <p>Application for Instructors</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                AI-powered dashboard to manage classes, track progress, and
-                generate reports.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/edusync">Code</a>]
-              </p>
-            </div>
-          </div>
-
-          <div class="project-slider">
-            <img src="assets/img/edusync1.png" class="slider-image active" alt="EduSync sample 1" />
-            <img src="assets/img/edusync2.png" class="slider-image" alt="EduSync sample 2" />
-            <img src="assets/img/edusync3.png" class="slider-image" alt="EduSync sample 3" />
-            <img src="assets/img/edusync4.png" class="slider-image" alt="EduSync sample 4" />
-            <img src="assets/img/edusync5.png" class="slider-image" alt="EduSync sample 5" />
-            <button class="slider-btn prev">&#10094;</button>
-            <button class="slider-btn next">&#10095;</button>
-          </div>
+      <!-- Project: Denoisy -->
+      <div class="project-card" data-number="005">
+        <div class="project-number">05</div>
+        <h3>Denoisy</h3>
+        <p class="project-tagline">Low-Light Restoration</p>
+        <div class="project-tech">
+          <span>PyTorch</span>
+          <span>FFT Attention</span>
         </div>
+        <a href="#" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <!-- Remaining simple projects -->
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Indictts-deepfake detector</h3>
-              <p>Wav2vec2</p>
-            </div>
-            <div class="project-desc">
-              <p>AI-generated speech detector across 16 Indian languages.</p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/indictts-deepfake">Code</a>]
-              </p>
-            </div>
-          </div>
+      <!-- Project: CMSN -->
+      <div class="project-card" data-coords="48.8°N 2.3°E">
+        <div class="project-number">06</div>
+        <h3>CMSN</h3>
+        <p class="project-tagline">Cloud Removal Network</p>
+        <div class="project-tech">
+          <span>ResFFT</span>
+          <span>Landsat</span>
         </div>
+        <a href="https://github.com/aniketDash7/CMSN_experiments-" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Low light Depth Estimator</h3>
-              <p>UNET</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                <strong>Depth Estimation:</strong> Generating depth maps from
-                challenging low-light captures.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/indictts-deepfake">Code</a>]
-              </p>
-            </div>
-          </div>
+      <!-- Project: SimCLR -->
+      <div class="project-card" data-coords="34.0°N 118.2°W">
+        <div class="project-number">07</div>
+        <h3>Agri-scene Classifier</h3>
+        <p class="project-tagline">Contrastive Learning</p>
+        <div class="project-tech">
+          <span>SimCLR</span>
+          <span>ResNet50</span>
         </div>
+        <a href="https://github.com/aniketDash7/SimCLR" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Fake News Detector</h3>
-              <p>Random Forest</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                <strong>Fake News Detection (Malayalam):</strong> Detecting
-                misinformation using custom neural networks and classic ML
-                models.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/fake_news_detection">Code</a>]
-              </p>
-            </div>
-          </div>
+      <!-- Project: EduSync -->
+      <div class="project-card" data-coords="52.5°N 13.4°E">
+        <div class="project-number">08</div>
+        <h3>Edu Sync</h3>
+        <p class="project-tagline">Class Management</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Python</span>
         </div>
+        <a href="https://github.com/aniketDash7/edusync" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Business Data Management</h3>
-              <p>Pandas | Excel</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                <strong>Shawarma Truck Data Project:</strong> Improving business
-                decisions for a local food truck using data insights.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/business_data_management">Code</a>]
-              </p>
-            </div>
-          </div>
+      <!-- Project: Indictts -->
+      <div class="project-card" data-coords="1.3°N 103.8°E">
+        <div class="project-number">09</div>
+        <h3>Indictts</h3>
+        <p class="project-tagline">Deepfake Detector</p>
+        <div class="project-tech">
+          <span>Wav2vec2</span>
+          <span>16 Languages</span>
         </div>
+        <a href="https://github.com/aniketDash7/indictts-deepfake" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Juke</h3>
-              <p>Music Streaming Application</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                A music streaming app built for local creators and listeners
-                with access control.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/juke">Code</a>]
-              </p>
-            </div>
-          </div>
+      <!-- Project: Depth Estimator -->
+      <div class="project-card" data-coords="55.7°N 37.6°E">
+        <div class="project-number">10</div>
+        <h3>Depth Estimator</h3>
+        <p class="project-tagline">Low-Light Depth Maps</p>
+        <div class="project-tech">
+          <span>UNET</span>
+          <span>PyTorch</span>
         </div>
+        <a href="https://github.com/aniketDash7/indictts-deepfake" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
 
-        <div class="project">
-          <div class="project-header">
-            <div class="project-meta">
-              <h3>Chime</h3>
-              <p>Blog</p>
-            </div>
-            <div class="project-desc">
-              <p>
-                A multi-user blog platform to share thoughts, follow users, and
-                engage.
-              </p>
-              <p class="links">
-                [<a href="https://github.com/aniketDash7/Chime">Code</a>]
-              </p>
-            </div>
-          </div>
+      <!-- Project: Fake News -->
+      <div class="project-card" data-coords="33.8°S 151.2°E">
+        <div class="project-number">11</div>
+        <h3>Fake News Detector</h3>
+        <p class="project-tagline">Misinformation Detection</p>
+        <div class="project-tech">
+          <span>Random Forest</span>
+          <span>Malayalam</span>
         </div>
-      </section>
-    </main>
+        <a href="https://github.com/aniketDash7/fake_news_detection" target="_blank" class="project-link">VIEW CODE
+          ▸</a>
+      </div>
 
-    <footer>
-      <p>© 2025 Aniket Dash</p>
-    </footer>
+      <!-- Project: Juke -->
+      <div class="project-card" data-coords="23.5°N 58.5°E">
+        <div class="project-number">12</div>
+        <h3>Juke</h3>
+        <p class="project-tagline">Music Streaming App</p>
+        <div class="project-tech">
+          <span>Flask</span>
+          <span>SQL</span>
+        </div>
+        <a href="https://github.com/aniketDash7/juke" target="_blank" class="project-link">VIEW CODE ▸</a>
+      </div>
+    </section>
+  </main>
 
-    <!-- ====== SLIDER SCRIPT ====== -->
-    <script>
-      document.querySelectorAll('.project-slider').forEach(slider => {
-        const images = slider.querySelectorAll('.slider-image');
-        let current = 0;
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <button class="nav-arrow left" onclick="window.location.href='index.html'">←</button>
+    <button class="nav-arrow right" onclick="window.location.href='blog.html'">→</button>
+  </div>
 
-        const showImage = (index) => {
-          images.forEach((img, i) => img.classList.toggle('active', i === index));
-        };
+  <footer class="checkpoint-footer">
+    <p>© 2025</p>
+  </footer>
 
-        slider.querySelector('.prev').addEventListener('click', () => {
-          current = (current - 1 + images.length) % images.length;
-          showImage(current);
-        });
+  <script src="assets/js/retro-animations.js"></script>
+</body>
 
-        slider.querySelector('.next').addEventListener('click', () => {
-          current = (current + 1) % images.length;
-          showImage(current);
-        });
-      });
-    </script>
-  </body>
 </html>

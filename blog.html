@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog - Aniket Dash</title>
-
-  <!-- Favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>▸ BLOG - ANIKET DASH</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-
-  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Global Styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <h1><a href="index.html">Aniket Dash</a></h1>
-    <nav>
-      <a href="media.html">Media</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="music.html">Music</a>
+  <!-- Top Navigation Icons -->
+  <nav class="top-nav">
+    <div class="nav-icons">
+      <a href="index.html" class="icon-btn" title="Home">HOME</a>
+      <a href="work.html" class="icon-btn" title="Work">WORK</a>
+      <a href="blog.html" class="icon-btn" title="Blog">BLOG</a>
+      <a href="media.html" class="icon-btn active" title="Media">MEDIA</a>
+      <a href="about.html" class="icon-btn" title="About">ABOUT</a>
+      <a href="music.html" class="icon-btn" title="Music">MUSIC</a>
+    </div>
+  </nav>
 
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <section class="blog-intro">
-      <h2>Blog & Writings</h2>
-      <p>Reflections, insights, and experiments from my journey through data, design, and discovery.</p>
+  <main class="checkpoint-container">
+    <!-- Blog Header -->
+    <section class="hero-checkpoint">
+      <div class="label-small">▸ WRITINGS</div>
+      <!-- Big Article Count -->
+      <h1 class="hero-title">BLOG</h1>
+      <p class="hero-subtitle">Technical articles and insights.</p>
     </section>
 
-    <section class="blog-list">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/pulse/building-cloud-free-landsat-pipeline-remote-sensing-analysis-dash-e4cdc/?trackingId=m2nfjtC8SbiYpuei2zQJcg%3D%3D" target="_blank" rel="noopener noreferrer">
-            <h3>Building a Cloud-Free Landsat Pipeline For Remote Sensing Analysis</h3>
-            <p>Satellite-to-Drive automation using <strong>Google Earth Engine</strong>.</p>
-          </a>
-        </li>
+    <!-- Blog Grid -->
+    <div class="blog-grid">
 
-        <li>
-          <a href="https://www.linkedin.com/pulse/gradient-descent-i-see-aniket-dash-pf4de/?trackingId=oqH79bEmQIKnfGqUPw3iPg%3D%3D" target="_blank" rel="noopener noreferrer">
-            <h3>Gradient Descent: As I See It</h3>
-            <p>A deep dive into one of the most fundamental ideas in <strong>neural networks</strong>.</p>
-          </a>
-        </li>
+      <!-- Whitepaper Article (Featured) -->
+      <div class="article-card" style="border-color: var(--theme-primary); background: #fff;">
+        <div class="article-number" style="color: var(--theme-primary); opacity: 1;">★</div>
+        <h3>The Authenticity Protocol</h3>
+        <p class="article-desc">Inverting the Burden of Proof: A framework for trust in the age of AI.</p>
+        <button onclick="openModal()" class="article-link"
+          style="cursor: pointer; background:none; border:none; padding:0; font:inherit; color:inherit;">READ WHITEPAPER
+          ▸</button>
+      </div>
 
-        <li>
-          <a href="https://www.linkedin.com/pulse/gradient-descent-i-see-aniket-dash-pf4de/?trackingId=oqH79bEmQIKnfGqUPw3iPg%3D%3D" target="_blank" rel="noopener noreferrer">
-            <h3>Diving into RAGs: Building My First Chatbot and Lessons Learned</h3>
-            <p>My first hands-on experience with <strong>Retrieval Augmented Generation</strong>.</p>
-          </a>
-        </li>
+      <!-- Article 1 -->
+      <a href="https://www.linkedin.com/pulse/architecting-private-agentic-workflows-aniket-dash-k9xic/?trackingId=rFBPfpRUTqOKgLArB18a3Q%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Jan 2026</div>
+        <h3>Architecting Private Agentic Workflows</h3>
+        <p class="article-desc">Design patterns for secure, offline-capable AI agents.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
 
-        <li>
-          <a href="https://medium.com/@aniket.addash/recommendation-engine-and-feelings-38d9842e8ce1" target="_blank" rel="noopener noreferrer">
-            <h3>Recommendation Engine and Feelings</h3>
-            <p>Exploring how <strong>emotions can be vectorized</strong> and modeled computationally.</p>
-          </a>
-        </li>
+      <!-- Article 2 -->
+      <a href="https://www.linkedin.com/pulse/mechanics-surveillance-systems-aniket-dash-tz2ic/?trackingId=fCbqJFR%2FTaWx1M74gBg7%2Bg%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Dec 2025</div>
+        <h3>Mechanics of Surveillance Systems</h3>
+        <p class="article-desc">Analyzing the technical infrastructure of modern monitoring.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
 
-        <li>
-          <a href="https://www.linkedin.com/pulse/hypothesis-testing-taxi-fare-data-in-depth-analysis-aniket-dash-4rjsc/?trackingId=qBlbS1aIaWJQ4yhn2eiRAw%3D%3D" target="_blank" rel="noopener noreferrer">
-            <h3>Hypothesis Testing with Taxi Fare Data</h3>
-            <p>Analyzing fare differences between <strong>payment methods (card vs cash)</strong>.</p>
-          </a>
-        </li>
+      <!-- Article 3 -->
+      <a href="https://www.linkedin.com/pulse/mapping-politics-water-aniket-dash-vykge/?trackingId=oVHhzMSVQPGZBkTdaSAeLw%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Nov 2025</div>
+        <h3>Mapping the Politics of Water</h3>
+        <p class="article-desc">Geospatial analysis of resource conflict and distribution.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
 
-        <li>
-          <a href="https://www.linkedin.com/pulse/time-series-forecasting-xgboost-comprehensive-guide-aniket-dash-4drvc/?trackingId=L7ej97HEDNC6DzNKlD2o5g%3D%3D" target="_blank" rel="noopener noreferrer">
-            <h3>Time Series Forecasting with XGBoost</h3>
-            <p>Forecasting <strong>power consumption</strong> trends in the US using machine learning.</p>
-          </a>
-        </li>
-      </ul>
-    </section>
+      <!-- Article 4 -->
+      <a href="https://www.linkedin.com/newsletters/7330101588411211777/" target="_blank" class="article-card">
+        <div class="article-meta">Newsletter</div>
+        <h3>Geophonic</h3>
+        <p class="article-desc">Regular edition exploring the intersection of Earth data and AI.</p>
+        <span class="read-more">SUBSCRIBE ▸</span>
+      </a>
+
+      <!-- Article 5 -->
+      <a href="https://www.linkedin.com/pulse/understanding-cloud-native-geospatial-data-aniket-dash-vulpc/?trackingId=187cpmIZTMuIYDcVlUjBQw%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Oct 2025</div>
+        <h3>Cloud Native Geospatial Data</h3>
+        <p class="article-desc">Optimizing satellite imagery workflows with COGs and STAC.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
+
+      <!-- Article 6 -->
+      <a href="https://www.linkedin.com/pulse/instance-segmentation-using-yolov8-seg-aniket-dash-vvcpc/?trackingId=GXimh5R8RouYPhvFr7%2B%2BFg%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Sep 2025</div>
+        <h3>Instance Segmentation with YOLOv8</h3>
+        <p class="article-desc">Practical guide to training segmentation models.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
+
+      <!-- Article 7 -->
+      <a href="https://www.linkedin.com/pulse/jumping-musical-genres-aniket-dash-qioxc/?trackingId=UDeTB0boRoO0tJk0gd9OzQ%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Music AI</div>
+        <h3>Jumping Musical Genres</h3>
+        <p class="article-desc">Exploring style transfer in audio generation.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
+
+      <!-- Article 8 -->
+      <a href="https://www.linkedin.com/pulse/interpreting-music-neural-networks-aniket-dash-xu1yc/?trackingId=eshF03R7Q3aD87ocG8BMpg%3D%3D"
+        target="_blank" class="article-card">
+        <div class="article-meta">Music AI</div>
+        <h3>Interpreting Music Neural Networks</h3>
+        <p class="article-desc">Visualizing latent spaces in audio models.</p>
+        <span class="read-more">READ ▸</span>
+      </a>
+
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Aniket Dash</p>
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <button class="nav-arrow left" onclick="window.location.href='work.html'">←</button>
+    <button class="nav-arrow right" onclick="window.location.href='media.html'">→</button>
+  </div>
+
+  <footer class="checkpoint-footer">
+    <p>© 2025</p>
   </footer>
+
+  <script src="assets/js/retro-animations.js"></script>
 </body>
+
 </html>
