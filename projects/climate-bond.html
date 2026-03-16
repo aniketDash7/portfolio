@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>▸ CLIMATE BOND RISK - ANIKET DASH</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    .case-study-hero {
+      text-align: left;
+      margin-bottom: 4rem;
+      border-bottom: 2px solid var(--theme-primary);
+      padding-bottom: 2rem;
+    }
+    .case-study-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .viz-placeholder {
+      width: 100%;
+      height: 400px;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+      border: 1px dashed #ccc;
+      font-family: var(--font-mono);
+      color: #888;
+    }
+    .tech-pill-container {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .tech-pill {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      border: 1px solid var(--theme-primary);
+    }
+    .section-title {
+      font-family: var(--font-mono);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: var(--theme-primary);
+    }
+    .handwritten-note {
+      font-family: var(--font-hand);
+      color: #c0392b;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-icons">
+      <a href="../index.html" class="icon-btn">HOME</a>
+      <a href="../work.html" class="icon-btn active">WORK</a>
+      <a href="../blog.html" class="icon-btn">BLOG</a>
+      <a href="../about.html" class="icon-btn">ABOUT</a>
+    </div>
+  </nav>
+
+  <main class="checkpoint-container">
+    <article class="case-study-content">
+      <header class="case-study-hero">
+        <div class="label-small">▸ CASE STUDY 001</div>
+        <h1 class="hero-title" style="font-size: 4rem;">CLIMATE BOND RISK</h1>
+        <p class="hero-subtitle">Solving the Climate-Pricing Gap in Municipal Finance.</p>
+        <div class="tech-pill-container">
+          <span class="tech-pill">GEOSPATIAL AI</span>
+          <span class="tech-pill">PYTORCH</span>
+          <span class="tech-pill">FASTAPI</span>
+          <span class="tech-pill">SENTINEL-2</span>
+        </div>
+      </header>
+
+      <section>
+        <p>Most bond traders look at spreadsheets. I look at satellites.</p>
+        <p>Municipal bonds funding your local infrastructure are traditionally priced on tax bases and ledger sheets. But in California, a wildfire doesn't care about your tax base—it deletes it.</p>
+        
+        <div class="viz-placeholder">
+          [ VIZ: SATELLITE OVERLAY HUD ]
+        </div>
+
+        <h2 class="section-title">The "Problem"</h2>
+        <p>Standard credit models lag significantly in pricing physical climate risk. This creates a "Climate Spread"—unpriced risk that could lead to $100M+ portfolio impairments if not identified early.</p>
+
+        <h2 class="section-title">The Engineering</h2>
+        <p>I built a hybrid ML architecture to ingest and process 524k+ NASA FIRMS records. We didn't just guess; we used real physics. The system calculates <strong>NDVI (Vegetation Health)</strong> from Sentinel-2 multispectral imagery to measure how "ignitable" the landscape is around each bond asset.</p>
+        
+        <p>Then, the fun part: A temporal <strong>CNN + LSTM</strong> model that looks at 7-day weather sequences to predict if a fire path is heading towards an asset. It's essentially a "radar" for financial risk.</p>
+
+        <div class="viz-placeholder">
+          [ VIZ: FIRE PATH TRAJECTORY ]
+        </div>
+
+        <h2 class="section-title">Why it Matters</h2>
+        <p>We quantified an average <strong>78 bps yield spread</strong> across a $1.2B portfolio. In institutional finance, 78 basis points is the difference between a safe bet and a systemic failure.</p>
+        
+        <span class="handwritten-note">"Finally, a model that sees the fire before it hits the portfolio."</span>
+      </section>
+
+      <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+        <a href="../work.html" class="project-link">BACK TO ALL PROJECTS</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="checkpoint-footer">
+    <p>© 2025</p>
+  </footer>
+
+  <script src="../assets/js/retro-animations.js"></script>
+</body>
+
+</html>

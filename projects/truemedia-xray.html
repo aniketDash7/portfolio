@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>▸ TRUEMEDIA X-RAY - ANIKET DASH</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    .case-study-hero {
+      text-align: left;
+      margin-bottom: 4rem;
+      border-bottom: 2px solid var(--theme-primary);
+      padding-bottom: 2rem;
+    }
+    .case-study-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .viz-placeholder {
+      width: 100%;
+      height: 400px;
+      background: #fdf2f8; /* Subtle pink for 'detection' theme */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+      border: 1px dashed #ec4899;
+      font-family: var(--font-mono);
+      color: #ec4899;
+    }
+    .tech-pill-container {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .tech-pill {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      border: 1px solid var(--theme-primary);
+    }
+    .section-title {
+      font-family: var(--font-mono);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: var(--theme-primary);
+    }
+    .handwritten-note {
+      font-family: var(--font-hand);
+      color: #ec4899;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-icons">
+      <a href="../index.html" class="icon-btn">HOME</a>
+      <a href="../work.html" class="icon-btn active">WORK</a>
+      <a href="../blog.html" class="icon-btn">BLOG</a>
+      <a href="../about.html" class="icon-btn">ABOUT</a>
+    </div>
+  </nav>
+
+  <main class="checkpoint-container">
+    <article class="case-study-content">
+      <header class="case-study-hero">
+        <div class="label-small">▸ CASE STUDY 002</div>
+        <h1 class="hero-title" style="font-size: 4rem;">TRUEMEDIA X-RAY</h1>
+        <p class="hero-subtitle">Unmasking the Deepfake Era.</p>
+        <div class="tech-pill-container">
+          <span class="tech-pill">COMPUTER VISION</span>
+          <span class="tech-pill">CHROME SDK</span>
+          <span class="tech-pill">HEATMAPS</span>
+          <span class="tech-pill">FASTAPI</span>
+        </div>
+      </header>
+
+      <section>
+        <p>Is that really them talking? Probably not.</p>
+        <p>TrueMedia X-Ray is an infrastructure layer designed to restore trust in digital video. We're not just looking for "artifacts"—ours is a full forensic scan of the pixel stream.</p>
+        
+        <div class="viz-placeholder">
+          [ VIZ: MAGENTA HEATMAP OVER FACE ]
+        </div>
+
+        <h2 class="section-title">The Challenge</h2>
+        <p>Deepfakes are getting better. A traditional "detector" only tells you yes or no. People want to <em>see</em> where the manipulation is happenng. Is it the mouth? The eyes? The lighting?</p>
+
+        <h2 class="section-title">The Build</h2>
+        <p>I built a Chrome extension that acts as a real-time forensic lens. It taps into a backend inference engine that runs specialized face-swapping detection models. The magic is in the <strong>Overlay Heatmap</strong>—it literally paints the manipulated pixels in magenta on the fly.</p>
+        
+        <p>We implemented a freemium model with a mock payment flow, because trust shouldn't just be free; it should be sustainable.</p>
+
+        <div class="viz-placeholder">
+          [ VIZ: CHROME EXTENSION HUD ]
+        </div>
+
+        <h2 class="section-title">The Impact</h2>
+        <p>Restoring a baseline of reality. It's a tool for journalists, researchers, and anyone who's tired of being lied to by a 24fps MP4 file.</p>
+        
+        <span class="handwritten-note">"Trust but verify. Then scan."</span>
+      </section>
+
+      <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+        <a href="../work.html" class="project-link">BACK TO ALL PROJECTS</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="checkpoint-footer">
+    <p>© 2025</p>
+  </footer>
+
+  <script src="../assets/js/retro-animations.js"></script>
+</body>
+
+</html>
